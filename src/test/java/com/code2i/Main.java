@@ -45,7 +45,7 @@ public class Main {
         List xList = new ArrayList<Integer>();
         // 2. assumption x is inclusive
         for (int i = startIndex; i <= endIndex; i++) {
-            if (startIndex % i == 0) {
+            if (i % startIndex == 0) {
                 xList.add(i);
             }
         }
