@@ -28,8 +28,8 @@ public class Main {
 
     public static Map<Integer,Integer> multiplesOfAs(Integer a, Integer x){
         // 3. assumption a and x are non zero integer
-        if(a==0 || x==0){
-            throw new RuntimeException("A and X should be nonzero integer pls try again");
+        if(a==0){
+            throw new RuntimeException("A should be nonzero integer pls try again");
         }
         // 1.assumption a+2<3x
         if(a+2 >= 3*x){
