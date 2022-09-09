@@ -20,16 +20,20 @@ public class Main {
          5-Please upload to a public Github repository and share the link.”
          */
 
-        Map<Integer, Integer> result = multiplesOfAs(2, 20);
+        Map<Integer, Integer> result = multiplesOfAs(0, 20);
         System.out.println(result);
 
     }
 
 
     public static Map<Integer,Integer> multiplesOfAs(Integer a, Integer x){
+        // 3. assumption a and x are non zero integer
+        if(a==0 || x==0){
+            throw new RuntimeException("A and X should be nonzero integer pls try again");
+        }
         // 1.assumption a+2<3x
         if(a+2 >= 3*x){
-            throw new RuntimeException("A+2 should be less than 3x please try");
+            throw new RuntimeException("A+2 should be less than 3x please try again");
         }else{
         }
         Map result = new HashMap<Integer,Integer>();
