@@ -1,6 +1,5 @@
 package com.code2i;
 
-import org.omg.PortableInterceptor.INACTIVE;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -27,11 +26,11 @@ public class Main {
 
 
     public static Map<Integer,Integer> multiplesOfAs(Integer a, Integer x){
-        // 3. assumption a and x are non zero integer
+        // 3. assumption A should be non zero integer
         if(a==0){
             throw new RuntimeException("A should be nonzero integer pls try again");
         }
-        // 1.assumption a+2<3x
+        // 1.assumption A+2<3X
         if(a+2 >= 3*x){
             throw new RuntimeException("A+2 should be less than 3x please try again");
         }else{
@@ -47,7 +46,7 @@ public class Main {
 
     public static List iterateNumber(Integer startIndex, Integer endIndex) {
         List xList = new ArrayList<Integer>();
-        // 2. assumption x is inclusive
+        // 2. assumption X is inclusive
         for (int i = startIndex; i <= endIndex; i++) {
             if (i % startIndex == 0) {
                 xList.add(i);
